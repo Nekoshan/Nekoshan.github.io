@@ -1,0 +1,36 @@
+
+header {
+    background-color: bisque;
+    position: fixed;
+    width: 100%;
+}
+.container {
+    padding: 12px 0;
+    margin: 0 auto;
+    width: 90%;
+}
+.fit-picture {
+    width: 200px;
+}
+.list {
+    align-items: center;
+    justify-content: space-around;
+}
+.list li {
+    list-style: none;
+}
+.list a {
+    text-decoration: none;
+    display: block;
+    font-size: 60px;
+    color: black;
+    font-family: Oswald;
+}
+@font-face {
+    font-family: "Oswald";
+    src:
+      url("../fonts/Oswald/static/Oswald-Medium.ttf");
+  }
+  .flex {
+    display: flex;
+  }
