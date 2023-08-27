@@ -4,26 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>DEV</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/index.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
 </head>
 <body>
     <header>
         <div class="container">
            <ul class="list flex">
-            <li><a href="#"><img class="fit-picture" src="img/Black logo - no background.png" alt="glogo"></a></li>
-            <li><a href="#">ПОРТФОЛИО</a></li>
-            <li><a href="#">О СЕБЕ</a></li>
-            <li><a href="#">КОНТАКТЫ</a></li>
+            <li><a class="link" href="#"><img class="fit-picture" src="img/Black logo - no background.png" alt="glogo"></a></li>
+            <li><a class="link" href="#">ПОРТФОЛИО</a></li>
+            <li><a class="link" href="#">О СЕБЕ</a></li>
+            <li><a class="link" href="#">КОНТАКТЫ</a></li>
            </ul>
         </div>
     </header>
     <main>
-        <div class="container flex">
-            
-        </div>
+        <section class="container">
+            <div class="portfolio flex">
+                <div class="portfolio-box">
+                    <h1>Список проектов</h1>
+                    <ul class="portfolio-list">
+                        <li><a href="#">Project1</a></li>
+                        <li><a href="#">Project2</a></li>
+                        <li><a href="#">Soon...</a></li>
+                    </ul>
+                </div>
+                <img class="portfolio-img" src="img/newGifProg.gif" alt="progerGif"/>
+            </div>
+        </section>
+        <section class="container">
+            <div class="about flex">
+                <div class="img-box"><img class="about-img scale" src="img/photo_2023-08-24_10-39-20.jpg" alt="me"></div>
+                <div class="about-info">
+                    <h1 class="about-title">Full-stack Разрабочик</h1>
+                    <h2 class="about-subtitle">Михин Никита</h2>
+                    <p class="about-desctription">
+                        Привет, я начинающий Фулл-стак JavaScript разрабочик,
+                         здесь я делюсь своими завершёнными проектами в красивом 
+                         оформленни. Так же сам этот сайт является одним из моих проектов!</p>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
