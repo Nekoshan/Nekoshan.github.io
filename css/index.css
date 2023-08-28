@@ -13,12 +13,18 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 20px;
+  padding: 8px;
 }
 .container {
     padding: 0px 0;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
+}
+.link {
+    transition: color 0.3s;
+}
+.link:hover {
+    color: #A5956D;
 }
 .fit-picture {
     width: 200px;
@@ -40,11 +46,15 @@ header {
 @font-face {
     font-family: "Oswald";
     src:
-      url("../fonts/Oswald/static/Oswald-Medium.ttf") ,
-      url("../fonts/Oswald/static/Oswald-Light.ttf"),
-      url("../fonts/Oswald/static/Oswald-Regular.ttf"),
-      url("../fonts/Oswald/static/Oswald-ExtraLight.ttf"),
-      url("../fonts/Oswald/static/Oswald-Bold.ttf");
+      url("../fonts/Oswald/static/Oswald-Medium.ttf");
+  }
+  @font-face {
+    font-family: "Oswald-Bold";
+    src: url(../fonts/Oswald/static/Oswald-Bold.ttf);
+  }
+  @font-face {
+    font-family: "Oswald-Light";
+    src: url(../fonts/Oswald/static/Oswald-Light.ttf);
   }
   .flex {
     display: flex;
@@ -58,18 +68,40 @@ header {
     justify-content: space-around;
     height: 650px;
   }
+  
+  .portfolio-title {
+    text-decoration: none;
+    color: black;
+    font-family: Oswald-Bold;
+    font-size: 70px;
+    padding: 50px 0;
+  }
+  .portfolio-list {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: center;
+  }
+  .portfolio-list li {
+    list-style: none;
+  display: inline;
+  border: 0px solid #cccccc;
+  }
+  .portfolio-list a {
+    text-decoration: none;
+    display: block;
+    font-size: 50px;
+    padding: 20px;
+    color: black;
+    font-family: Oswald;
+  }
   .about {
     background-color: #8AAAA5;
     align-items: center;
     flex-direction: column;
-    
+    padding: 15px 0;
   }
-  .img-box {
-    max-width: 848px;
-    justify-self: center;
-    border: 2px, solid #8AAAA5;
-    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-  }
+  
   .about-img {
     width: 350px;
   }
@@ -78,4 +110,12 @@ header {
   }
   .scale:hover {
     transform: scale(1.1);
+  }
+  footer {
+    background-color: #A5956D;
+    width: 100%;
+    height: 100px;
+  }
+  .grid-container {
+    display: grid;
   }

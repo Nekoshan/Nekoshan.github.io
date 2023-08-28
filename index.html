@@ -14,33 +14,35 @@
     <header>
         <div class="container">
            <ul class="list flex">
-            <li><a class="link" href="#"><img class="fit-picture" src="img/Black logo - no background.png" alt="glogo"></a></li>
-            <li><a class="link" href="#">ПОРТФОЛИО</a></li>
-            <li><a class="link" href="#">О СЕБЕ</a></li>
-            <li><a class="link" href="#">КОНТАКТЫ</a></li>
+            <li><a href="#"><img class="fit-picture" src="img/Black logo - no background.png" alt="glogo"></a></li>
+            <li><a class="link" href="#portfolioId">ПОРТФОЛИО</a></li>
+            <li><a class="link" href="#aboutId">О СЕБЕ</a></li>
+            <li><a class="link" href="#contactsId">КОНТАКТЫ</a></li>
            </ul>
         </div>
     </header>
     <main>
         <section class="container">
-            <div class="portfolio flex">
+            <div class="portfolio flex" id="portfolioId">
                 <div class="portfolio-box">
-                    <h1>Список проектов</h1>
+                    <h1 class="portfolio-title">Список проектов</h1>
                     <ul class="portfolio-list">
-                        <li><a href="#">Project1</a></li>
-                        <li><a href="#">Project2</a></li>
-                        <li><a href="#">Soon...</a></li>
+                        <li><a class="portfolio-link" href="#">|Project1|</a></li>
+                        <li><a class="portfolio-link" href="#">|Project2|</a></li>
+                        <li><a class="portfolio-link" href="#">|Soon...|</a></li>
                     </ul>
                 </div>
                 <img class="portfolio-img" src="img/newGifProg.gif" alt="progerGif"/>
             </div>
         </section>
         <section class="container">
-            <div class="about flex">
-                <div class="img-box"><img class="about-img scale" src="img/photo_2023-08-24_10-39-20.jpg" alt="me"></div>
+            <div class="about flex" id="aboutId">
                 <div class="about-info">
                     <h1 class="about-title">Full-stack Разрабочик</h1>
                     <h2 class="about-subtitle">Михин Никита</h2>
+                </div>
+                <img class="about-img scale" src="img/photo_2023-08-24_10-39-20.jpg" alt="me">
+                <div class="about-info">
                     <p class="about-desctription">
                         Привет, я начинающий Фулл-стак JavaScript разрабочик,
                          здесь я делюсь своими завершёнными проектами в красивом 
@@ -49,5 +51,20 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="container grid-container">
+            <div class="contacts flex" id="contactsId">
+                <div class="contacts-main">
+                    <h1 class="contacts-list">
+                        Контакты
+                    </h1>
+                    e-mail: nikita12360732@gmail.com
+                </div>
+                <div class="contacts-sm">
+
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
