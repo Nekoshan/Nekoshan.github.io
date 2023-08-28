@@ -56,6 +56,10 @@ header {
     font-family: "Oswald-Light";
     src: url(../fonts/Oswald/static/Oswald-Light.ttf);
   }
+  @font-face {
+    font-family: "Oswald-ExtraLight";
+    src: url(../fonts/Oswald/static/Oswald-ExtraLight.ttf);
+  }
   .flex {
     display: flex;
   }
@@ -64,13 +68,19 @@ header {
   }
   .portfolio {
     background-color: #CABD9A;
-    align-items: center;
-    justify-content: space-around;
     height: 650px;
   }
-  
+  .portfolio-box{
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    text-align: center;
+  }
   .portfolio-title {
     text-decoration: none;
+    display: block;
     color: black;
     font-family: Oswald-Bold;
     font-size: 70px;
@@ -87,13 +97,24 @@ header {
   display: inline;
   border: 0px solid #cccccc;
   }
-  .portfolio-list a {
+  .portfolio-link {
     text-decoration: none;
     display: block;
     font-size: 50px;
     padding: 20px;
     color: black;
     font-family: Oswald;
+    transition: color 0.3s;
+  }
+  .portfolio-link:hower {
+    color:#CABD9A;
+  }
+  .portfolio-img {
+    max-width: 700px;
+    max-height: 500px;
+    align-self: center;
+    justify-self: center;
+    margin: 0 auto;
   }
   .about {
     background-color: #8AAAA5;
@@ -111,11 +132,50 @@ header {
   .scale:hover {
     transform: scale(1.1);
   }
+  .about-title {
+    font-family: Oswald-Bold;
+    font-size: 50px;
+    padding: 30px 0 ;
+    text-align: center;
+  }
+  .about-info {
+    width: 650px;
+  }
+  .about-profession {
+    font-family: Oswald-Light;
+    font-size: 35px;
+    text-align: center;
+  }
+  .about-name {
+    font-family: Oswald-Light;
+    text-align: center;
+    font-size: 35px;
+  }
+  .about-desctription {
+    padding-top: 40px;
+    font-size: 20px;
+    font-family: Oswald-ExtraLight;
+  }
   footer {
     background-color: #A5956D;
     width: 100%;
-    height: 100px;
+    height: 115px;
   }
-  .grid-container {
-    display: grid;
-  }
+.contacts-main {
+    margin: 0 30px;
+    padding: 20px 0;
+}
+.contacts-link {
+    margin-right: 15px;
+    font-size: 40px;
+    color: black;
+    transition: color 0.2s;
+}
+.contacts-title {
+    text-decoration: none;
+    font-family: Oswald-Light;
+    font-size: 30px;
+}
+.contacts-link:hover {
+    color: lightseagreen;
+}
